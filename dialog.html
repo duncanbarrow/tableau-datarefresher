@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="settings">
+                <h4>Data Refresh Settings</h4>
+                <div class="table-responsive">
+                    <table id="settingsTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Setting Name</th>
+                                <th>Setting Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Refresh Interval (Seconds)</td>
+                                <td>
+                                    <input type="number" id="interval">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Refresh All Data Sources</td>
+                                <td>
+                                    <input type="checkbox" id="allDataSources" checked="false">
+                                </td>
+                            </tr>
+                            <tr style="width: auto;">
+                                <td>Data Sources</td>
+                                <td>
+                                    <select style="width: 100%;" class="js-example-basic-multiple" name="dataSources[]" id="dataSources" multiple="multiple">
+                                        
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="settingButtons">
+                <button id="saveButton" type="button" class="btn btn-primary">Save</button>
+                <button id="cancelButton" type="button" class="btn btn-primary">Cancel</button>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="js/tableau.extensions.1.latest.min.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+</html>
